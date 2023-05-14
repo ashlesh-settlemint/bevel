@@ -9,7 +9,7 @@
 # Main Playbook for the setting up and reseting Hyperledger Bevel DLT network
 #######################################
   - hosts: all
-    gather_facts: no
+    gather_facts: false
     no_log: "{{ no_ansible_log | default(false) }}"
   - import_playbook: network-schema-validator.yaml  
     when: reset is undefined or reset == 'false'       

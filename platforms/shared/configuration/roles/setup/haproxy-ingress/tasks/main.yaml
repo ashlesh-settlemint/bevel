@@ -6,6 +6,12 @@
 
 ---
 # Check if haproxy is already installed
+- name: install python pre-requisites
+  pip:
+    name:
+      - jsonpatch
+      - pyyaml
+      - kubernetes 
 - name: "Check if haproxy is already installed"
   k8s_info:
     kind: Pod
