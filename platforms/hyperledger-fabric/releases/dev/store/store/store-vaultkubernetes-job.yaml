@@ -27,10 +27,10 @@ spec:
     vault:
       reviewer_service: vault-reviewer
       role: vault-role
-      address: vault_addr
+      address: vault-0.vault-internal:8200
       authpath: devstore-net-auth
       policy: vault-crypto-peer-store-net-ro
-      secret_path: secretsv2
+      secret_path: secret/data/devwebapp/config
       serviceaccountname: vault-auth
       imagesecretname: regcred
     
